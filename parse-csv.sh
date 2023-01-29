@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if (($# < 2))
+then
+    echo "parse-csv.sh filename numberOfDays"
+    exit 0
+fi
+
+
 # first parameter is file name
 filename=$1
 # second parameter is number of days to parse
